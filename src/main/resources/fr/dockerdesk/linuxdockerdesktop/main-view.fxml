@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1150.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.dockerdesk.linuxdockerdesktop.infra.controller.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TabPane prefHeight="798.0" prefWidth="1110.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+         <Tab text="All Containers">
+             <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                         <ListView layoutX="2.0" layoutY="1.0" prefHeight="728.0" prefWidth="1110.0" />
+                     </children>
+                 </AnchorPane>
+             </content>
+         </Tab>
+       <Tab text="Active Containers">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <ListView layoutX="2.0" layoutY="1.0" prefHeight="728.0" prefWidth="1110.0" />
+                  </children>
+           </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+</VBox>
