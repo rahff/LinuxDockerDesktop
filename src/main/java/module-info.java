@@ -14,4 +14,5 @@ module fr.dockerdesk.linuxdockerdesktop {
     exports fr.dockerdesk.linuxdockerdesktop.infra.controller;
     opens fr.dockerdesk.linuxdockerdesktop.infra.controller to javafx.fxml;
     exports fr.dockerdesk.linuxdockerdesktop.core.useCases;
+    exports fr.dockerdesk.linuxdockerdesktop.core.ports.out;
 }
