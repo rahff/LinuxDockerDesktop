@@ -18,5 +18,4 @@ public class ContainerLoaderTest {
         assertArrayEquals(output.get(2).toArray(), new String[]{"f4f9ea95d2c7",   "mongo",  "\"docker-entrypoint.s…\"",  "6 months ago",   "Exited (0) 6 months ago", "", "user_account_service_mongodb_1"});
         assertArrayEquals(output.get(3).toArray(), new String[]{"afba6e4ceb58",   "user_account_service_test",  "\"docker-entrypoint.s…\"",  "6 months ago",   "Exited (1) 6 months ago", "", "user_account_service_test_1"});
     }
-
 }

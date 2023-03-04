@@ -20,7 +20,7 @@ public class NetworkControllerTest {
         ListViewObject result = sut.getViewObject();
         assertEquals(List.of("NETWORK ID", "NAME", "DRIVER", "SCOPE"),
                 result.getHeader());
-        assertEquals(List.of("5dbb1ade7543", "bridge", "bridge", "local"),
+        assertEquals(List.of("81b5ea2c8fe6", "bridge", "bridge", "local"),
                 result.getRowList().get(0));
         assertEquals(List.of("273a02c09f05", "host", "host", "local"),
                 result.getRowList().get(1));

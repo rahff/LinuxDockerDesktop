@@ -5,51 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="575a2b4e-f387-4ea0-8ee8-3f12a26988ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/entities/BaseTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/entities/ImageTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/entities/NetworkTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/entities/VolumeListTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/ports/in/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/ports/out/CommandRunnerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/stubs/FakeCommandRunnerAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/useCases/EntityLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/useCases/ImageListLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/useCases/NetworkLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/useCases/VolumeLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/adapters/CommandRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/controller/ContainerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/controller/ImageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/controller/NetworkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/controller/VolumeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/models/ContainerListViewObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/models/ImageListViewObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/models/ListViewObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/models/NetworkListViewObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/models/VolumeListViewObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/adapters/CommandRunnerAdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/ContainerControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/ImageControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/NetworkControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controller/VolumeControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/useCases/ContainerLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/useCases/ImageListLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/useCases/NetworkLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/useCases/VolumeLoaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/entities/ContainerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/entities/ContainerTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/useCases/ContainerListLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/core/useCases/ContainerListLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/controller/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/components/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/components/Logo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/components/SideBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/components/SideBarButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/dockerdesk/linuxdockerdesktop/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/dockerdesk/linuxdockerdesktop/infra/views/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fr/dockerdesk/linuxdockerdesktop/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/dockerdesk/linuxdockerdesktop/main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/useCasesTest/ContainerLoaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/controller/NetworkControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controller/NetworkControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/useCases/ContainerLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/useCases/ContainerLoaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -102,7 +69,25 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.controllers">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/fr/dockerdesk/linuxdockerdesktop/css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.dockerdesk.linuxdockerdesktop.Main" />
+      <module name="LinuxDockerDesktop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.dockerdesk.linuxdockerdesktop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AllTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="LinuxDockerDesktop" />
       <extension name="coverage">
@@ -132,23 +117,6 @@
       <option name="MAIN_CLASS_NAME" value="controller.VolumeControllerTest" />
       <option name="METHOD_NAME" value="should_build_VolumeListViewObjet_from_specific_loader_to_render_it_to_the_view" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="adapters" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="LinuxDockerDesktop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="useCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="adapters" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,19 +154,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.VolumeControllerTest.should_build_VolumeListViewObjet_from_specific_loader_to_render_it_to_the_view" />
       <item itemvalue="JUnit.AllTest" />
-      <item itemvalue="JUnit.adapters" />
       <item itemvalue="JUnit.controllers" />
       <item itemvalue="JUnit.useCases" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.controllers" />
         <item itemvalue="JUnit.AllTest" />
         <item itemvalue="JUnit.VolumeControllerTest.should_build_VolumeListViewObjet_from_specific_loader_to_render_it_to_the_view" />
         <item itemvalue="JUnit.useCases" />
-        <item itemvalue="JUnit.adapters" />
       </list>
     </recent_temporary>
   </component>

@@ -1,47 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1150.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.dockerdesk.linuxdockerdesktop.infra.controller.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <MenuBar>
-     <menus>
-       <Menu mnemonicParsing="false" text="File">
-         <items>
-           <MenuItem mnemonicParsing="false" text="Close" />
-         </items>
-       </Menu>
-       <Menu mnemonicParsing="false" text="Edit">
-         <items>
-           <MenuItem mnemonicParsing="false" text="Delete" />
-         </items>
-       </Menu>
-       <Menu mnemonicParsing="false" text="Help">
-         <items>
-           <MenuItem mnemonicParsing="false" text="About" />
-         </items>
-       </Menu>
-     </menus>
-   </MenuBar>
-   <TabPane prefHeight="798.0" prefWidth="1110.0" tabClosingPolicy="UNAVAILABLE">
-     <tabs>
-         <Tab text="Containers">
-             <content>
-                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<BorderPane prefHeight="825.0" prefWidth="1177.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+               <top>
+                  <MenuBar prefHeight="29.0" prefWidth="1150.0" BorderPane.alignment="CENTER">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </top>
+               <left>
+                  <VBox prefHeight="773.0" prefWidth="217.0" BorderPane.alignment="CENTER">
                      <children>
-                         <ListView layoutX="2.0" layoutY="1.0" prefHeight="728.0" prefWidth="1110.0" />
+                         <ImageView accessibleText="Logo" fitHeight="71.0" fitWidth="107.0" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+               <image>
+                  <Image url="@css/logo.png" />
+               </image>
+                         </ImageView>
+                        <GridPane alignment="CENTER" layoutY="200.0" prefHeight="300.0" prefWidth="217.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="466.0" minHeight="6.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="595.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="595.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button alignment="CENTER" defaultButton="true" mnemonicParsing="false" prefHeight="41.0" prefWidth="277.0" text="Container" textAlignment="CENTER" textOverrun="CLIP" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Dyuthi Regular" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="243.0" text="Images" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Dyuthi Regular" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="227.0" text="Volumes" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Dyuthi Regular" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="297.0" text="Networks" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Dyuthi Regular" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </GridPane>
                      </children>
-                 </AnchorPane>
-             </content>
-         </Tab>
-      <Tab text="Images">
-         <content>
-         </content>
-       </Tab>
-     </tabs>
-   </TabPane>
-</VBox>
+                  </VBox>
+               </left>
+   <center>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </center>
+            </BorderPane>
