@@ -1,6 +1,6 @@
 package adapters;
 
-import fr.dockerdesk.linuxdockerdesktop.infra.adapters.CommandRunner;
+import fr.linuxdockerdesktop.infra.adapters.CommandRunner;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;

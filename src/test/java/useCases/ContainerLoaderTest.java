@@ -1,8 +1,8 @@
 package useCases;
 
 
-import fr.dockerdesk.linuxdockerdesktop.core.stubs.FakeCommandRunnerAdapter;
-import fr.dockerdesk.linuxdockerdesktop.core.useCases.ContainerListLoader;
+import fr.linuxdockerdesktop.core.stubs.FakeCommandRunnerAdapter;
+import fr.linuxdockerdesktop.core.useCases.ContainerListLoader;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;

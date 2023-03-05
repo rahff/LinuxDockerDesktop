@@ -1,4 +1,4 @@
-module fr.dockerdesk.linuxdockerdesktop {
+module fr.linuxdockerdesktop {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -9,10 +9,10 @@ module fr.dockerdesk.linuxdockerdesktop {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens fr.dockerdesk.linuxdockerdesktop to javafx.fxml;
-    exports fr.dockerdesk.linuxdockerdesktop;
-    exports fr.dockerdesk.linuxdockerdesktop.infra.controller;
-    opens fr.dockerdesk.linuxdockerdesktop.infra.controller to javafx.fxml;
-    exports fr.dockerdesk.linuxdockerdesktop.core.useCases;
-    exports fr.dockerdesk.linuxdockerdesktop.core.ports.out;
+    opens fr.linuxdockerdesktop to javafx.fxml;
+    exports fr.linuxdockerdesktop;
+    opens fr.linuxdockerdesktop.infra.views to javafx.fxml;
+    opens fr.linuxdockerdesktop.window to javafx.fxml;
+    exports fr.linuxdockerdesktop.core.useCases;
+    exports fr.linuxdockerdesktop.core.ports.out;
 }

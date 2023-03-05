@@ -109,7 +109,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                fr.dockerdesk.linuxdockerdesktop/fr.dockerdesk.linuxdockerdesktop.Main
+                                fr.dockerdesk.linuxdockerdesktop/fr.linuxdockerdesktop.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

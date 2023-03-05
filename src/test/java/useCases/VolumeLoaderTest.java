@@ -1,7 +1,7 @@
 package useCases;
 
-import fr.dockerdesk.linuxdockerdesktop.core.stubs.FakeCommandRunnerAdapter;
-import fr.dockerdesk.linuxdockerdesktop.core.useCases.VolumeLoader;
+import fr.linuxdockerdesktop.core.stubs.FakeCommandRunnerAdapter;
+import fr.linuxdockerdesktop.core.useCases.VolumeListLoader;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -10,7 +10,7 @@ public class VolumeLoaderTest {
 
     @Test
     public void should_display_volume_list() {
-        var sut = new VolumeLoader(new FakeCommandRunnerAdapter());
+        var sut = new VolumeListLoader(new FakeCommandRunnerAdapter());
         var output = sut.load();
         assertArrayEquals(output.get(0).toArray(), new String[]{"DRIVER","VOLUME NAME"});
         assertArrayEquals(output.get(1).toArray(), new String[]{"local", "1a7af77bad3c29d791dd3387335547aadc79d7c9ee0081ffa47b231f9c358de9"});

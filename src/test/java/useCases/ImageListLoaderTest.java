@@ -1,7 +1,7 @@
 package useCases;
 
-import fr.dockerdesk.linuxdockerdesktop.core.stubs.FakeCommandRunnerAdapter;
-import fr.dockerdesk.linuxdockerdesktop.core.useCases.ImageListLoader;
+import fr.linuxdockerdesktop.core.stubs.FakeCommandRunnerAdapter;
+import fr.linuxdockerdesktop.core.useCases.ImageListLoader;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertArrayEquals;
