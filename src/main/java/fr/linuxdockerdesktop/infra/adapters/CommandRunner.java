@@ -1,6 +1,8 @@
 package fr.linuxdockerdesktop.infra.adapters;
 
-import fr.linuxdockerdesktop.core.ports.out.CommandRunnerAdapter;
+
+
+import org.core.spi.CommandRunnerAdapter;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

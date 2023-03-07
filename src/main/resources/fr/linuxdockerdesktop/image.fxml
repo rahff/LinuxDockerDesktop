@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="684.0" prefWidth="1334.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.linuxdockerdesktop.infra.controllers.ImageController">
+   <children>
+      <VBox fx:id="sidebar" alignment="TOP_CENTER" layoutX="1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="205.0" style="-fx-background-color: #ddd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="179.0" prefWidth="205.0" spacing="50.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@css/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Button fx:id="container" focusTraversable="false" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeView" prefHeight="30.0" prefWidth="200.0" text="Container">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="image" focusTraversable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Image">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="volume" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeView" prefHeight="30.0" prefWidth="200.0" text="Volumes">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="network" layoutY="200.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeView" prefHeight="30.0" prefWidth="200.0" text="Network">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="205.0" maxWidth="3000.0" prefHeight="47.0" prefWidth="825.0" style="-fx-background-color: #ddd;" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar maxHeight="3000.0" prefHeight="47.0" prefWidth="985.0" HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+
+       <Pane fx:id="tableBox" layoutX="206.0" layoutY="47.0" prefHeight="638.0" prefWidth="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <Label layoutX="421.0" layoutY="243.0" text="image" />
+         </children>
+       </Pane>
+   </children>
+</AnchorPane>
