@@ -19,7 +19,7 @@ public class CommandRunner implements CommandRunnerAdapter {
         try{
             Process process = new ProcessBuilder(getCommandAndArgs(command)).start();
             return process.getInputStream();
-        }catch (IOException e) {
+        }catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         }
     }

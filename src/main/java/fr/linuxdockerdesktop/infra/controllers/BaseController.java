@@ -1,32 +1,54 @@
 package fr.linuxdockerdesktop.infra.controllers;
 
+import fr.linuxdockerdesktop.infra.events.OnLoadEvent;
 import fr.linuxdockerdesktop.infra.views.ListViewObject;
 import fr.linuxdockerdesktop.window.MainWindow;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.AnchorPane;
 import org.core.api.Loader;
 
-public abstract class BaseController {
+import java.net.URL;
+;
+import java.util.ResourceBundle;
+
+public abstract class BaseController implements Initializable {
+
     protected Loader loader;
     @FXML
-    protected Pane tableBox;
+    AnchorPane tablePane;
     protected static MainWindow window;
-    protected BaseController(Loader loader){
-        this.window = MainWindow.getInstance();
-        this.loader = loader;
+
+    protected static OnLoadEvent onLoadEvent;
+
+    static {
+        BaseController.onLoadEvent = new OnLoadEvent(new EventType<>("onLoad"));
     }
-    protected BaseController(){} // for FXMLLoader
+
+    protected BaseController(){
+        this.window = MainWindow.getInstance();
+    } // for FXMLLoader
 
     protected ListViewObject getViewObject() {
         var entityList = loader.load();
         return ListViewObject.from(entityList);
     }
-
-    public void changeView(ActionEvent event){
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        tablePane.addEventHandler(onLoadEvent.getEventType(), event -> this.onLoad(event));
+        tablePane.fireEvent(onLoadEvent);
+    }
+    public void changeView(ActionEvent event) {
         var clickedButton = (Button) event.getSource();
         var sceneName = clickedButton.getId();
         this.window.changeScene(sceneName+".fxml");
+    }
+    private void onLoad(Event event) {
+        var table = (AnchorPane) event.getSource();
+        table.getChildren().clear();
+        table.getChildren().add(getViewObject());
     }
 }

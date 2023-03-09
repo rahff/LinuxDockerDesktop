@@ -37,6 +37,7 @@ public abstract class BaseTable {
     }
 
     public List<List<String>> getContent(String commandOutput) {
+        this.content.clear();
         this.parseCommandOutput(commandOutput);
         return content;
     }

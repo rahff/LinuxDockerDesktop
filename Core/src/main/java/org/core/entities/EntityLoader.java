@@ -18,6 +18,7 @@ public abstract class EntityLoader implements Loader {
     public EntityLoader(){}
     public List<List<String>> load() {
         var commandOutput = this.commandRunnerAdapter.run(command);
+        System.out.println("cc " + table.getContent(commandOutput));
         return table.getContent(commandOutput);
     }
 }

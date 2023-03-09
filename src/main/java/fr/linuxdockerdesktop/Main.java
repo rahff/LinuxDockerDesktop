@@ -11,8 +11,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        ServiceLocator serviceLocator = ServiceLocator.getInstance();
-        MainWindow.initializeAndGetInstance(serviceLocator).init();
+        ServiceLocator.getInstance();
+        MainWindow.getInstance().init();
     }
     public static void main(String[] args) {
         launch();

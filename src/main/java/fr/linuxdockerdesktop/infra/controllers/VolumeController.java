@@ -1,12 +1,10 @@
 package fr.linuxdockerdesktop.infra.controllers;
 
-import org.core.api.Loader;
+import fr.linuxdockerdesktop.infra.services.ServiceLocator;
 
-public class VolumeController extends BaseController{
-    public VolumeController(Loader loader){
-        super(loader);
-        this.loader = loader;
-    }
+public class VolumeController extends BaseController {
 
-    public VolumeController(){} //for FXMLLoader
+    public VolumeController(){
+        this.loader = ServiceLocator.getVolumeLoader();
+    } //for FXMLLoader
 }

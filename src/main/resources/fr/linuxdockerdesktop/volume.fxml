@@ -64,10 +64,6 @@
          </children>
       </HBox>
 
-       <Pane fx:id="tableBox" layoutX="206.0" layoutY="47.0" prefHeight="638.0" prefWidth="1129.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
-         <children>
-            <Button layoutX="397.0" layoutY="226.0" mnemonicParsing="false" text="Volumes" />
-         </children>
-       </Pane>
+       <AnchorPane fx:id="tablePane" layoutX="206.0" layoutY="46.0" prefHeight="641.0" prefWidth="1129.0" style="-fx-padding: 30px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0" />
    </children>
 </AnchorPane>

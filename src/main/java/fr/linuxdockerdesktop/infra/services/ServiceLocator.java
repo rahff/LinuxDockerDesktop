@@ -9,10 +9,11 @@ import java.util.stream.Collectors;
 public class ServiceLocator {
 
     private static ServiceLocator instance;
-    private List<Loader> loaders;
+    private static List<Loader> loaders;
 
     private ServiceLocator(){
         getLoaders();
+        System.out.println("locator "+loaders.size());
     }
 
     public static ServiceLocator getInstance() {
@@ -21,22 +22,22 @@ public class ServiceLocator {
         }
         return instance;
     }
-    public Loader getContainerLoader() {
+    public static Loader getContainerLoader() {
        return loaders.stream()
                .filter((loader) -> loader.getClass().toString().contains("ContainerListLoader"))
                .findFirst().get();
     }
-    public Loader getVolumeLoader() {
+    public static Loader getVolumeLoader() {
        return loaders.stream()
                .filter((loader) -> loader.getClass().toString().contains("VolumeListLoader"))
                .findFirst().get();
     }
-    public Loader getNetworkLoader() {
+    public static Loader getNetworkLoader() {
        return loaders.stream()
                .filter((loader) -> loader.getClass().toString().contains("NetworkListLoader"))
                .findFirst().get();
     }
-    public Loader getImageLoader() {
+    public static Loader getImageLoader() {
        return loaders.stream()
                .filter((loader) -> loader.getClass().toString().contains("ImageListLoader"))
                .findFirst().get();
