@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575a2b4e-f387-4ea0-8ee8-3f12a26988ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/events/OnLoadEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/main-component.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controllers/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Container/src/main/java/org/container/api/ContainerListLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Container/src/main/java/org/container/api/ContainerListLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/org/core/entities/BaseTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/org/core/entities/BaseTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/src/main/java/org/core/entities/EntityLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Core/src/main/java/org/core/entities/EntityLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/adapters/CommandRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/adapters/CommandRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/ContainerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/ContainerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/NetworkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/NetworkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/VolumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/controllers/VolumeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/services/ServiceLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/services/ServiceLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/views/ListViewObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/infra/views/ListViewObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/window/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/linuxdockerdesktop/window/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/container.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/container.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/image.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/image.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/network.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/network.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/volume.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fr/linuxdockerdesktop/volume.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="575a2b4e-f387-4ea0-8ee8-3f12a26988ba" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -21,7 +21,6 @@ public abstract class BaseController implements Initializable {
     protected Loader loader;
     @FXML
     AnchorPane tablePane;
-    protected static MainWindow window;
 
     protected static OnLoadEvent onLoadEvent;
 
@@ -29,9 +28,7 @@ public abstract class BaseController implements Initializable {
         BaseController.onLoadEvent = new OnLoadEvent(new EventType<>("onLoad"));
     }
 
-    protected BaseController(){
-        this.window = MainWindow.getInstance();
-    } // for FXMLLoader
+    protected BaseController(){} // for FXMLLoader
 
     protected ListViewObject getViewObject() {
         var entityList = loader.load();
@@ -44,7 +41,7 @@ public abstract class BaseController implements Initializable {
     public void changeView(ActionEvent event) {
         var clickedButton = (Button) event.getSource();
         var sceneName = clickedButton.getId();
-        this.window.changeScene(sceneName+".fxml");
+        MainWindow.getInstance().changeScene(sceneName+".fxml");
     }
     private void onLoad(Event event) {
         var table = (AnchorPane) event.getSource();
