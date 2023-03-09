@@ -7,4 +7,8 @@ public class ImageTable extends BaseTable {
     public ImageTable(){
         super();
     }
+
+    public static ImageTable factory(){
+        return new ImageTable();
+    }
 }

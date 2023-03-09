@@ -7,6 +7,6 @@ public class ImageController extends BaseController{
 
     public ImageController(){
         this.loader = ServiceLocator.getImageLoader();
-    } //for FXMLLoader
+    }
 
 }

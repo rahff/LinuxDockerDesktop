@@ -5,6 +5,7 @@ import org.core.entities.EntityLoader;
 import org.core.spi.CommandRunnerAdapter;
 import org.image.entities.ImageTable;
 
+import java.util.List;
 import java.util.ServiceLoader;
 
 public class ImageListLoader extends EntityLoader {
@@ -22,6 +23,10 @@ public class ImageListLoader extends EntityLoader {
 
     private void init() {
         this.command = "docker images -a";
-        this.table = new ImageTable();
+    }
+
+    @Override
+    protected List<List<String>> getTableContent(String commandOutput) {
+        return ImageTable.factory().getContent(commandOutput);
     }
 }

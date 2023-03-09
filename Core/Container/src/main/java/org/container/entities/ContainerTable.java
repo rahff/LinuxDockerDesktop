@@ -15,6 +15,10 @@ public class ContainerTable extends BaseTable {
         super();
     }
 
+    public static ContainerTable factory(){
+        return new ContainerTable();
+    }
+
     @Override
     protected List<String> getColumn(List<String> data, int column) {
         var currentLine = data.get(column);

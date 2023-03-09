@@ -6,4 +6,8 @@ public class NetworkTable extends BaseTable {
     public NetworkTable() {
         super();
     }
+
+    public static NetworkTable factory() {
+        return new NetworkTable();
+    }
 }

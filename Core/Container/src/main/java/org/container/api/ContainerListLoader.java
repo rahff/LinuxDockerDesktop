@@ -4,6 +4,8 @@ package org.container.api;
 import org.container.entities.ContainerTable;
 import org.core.entities.EntityLoader;
 import org.core.spi.CommandRunnerAdapter;
+
+import java.util.List;
 import java.util.ServiceLoader;
 
 
@@ -19,6 +21,10 @@ public class ContainerListLoader extends EntityLoader {
     }
     private void init() {
         this.command = "docker ps -a";
-        this.table = new ContainerTable();
+    }
+
+    @Override
+    public List<List<String>> getTableContent(String commandOutput){
+        return ContainerTable.factory().getContent(commandOutput);
     }
 }

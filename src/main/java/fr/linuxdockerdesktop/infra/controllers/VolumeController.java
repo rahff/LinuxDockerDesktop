@@ -6,5 +6,5 @@ public class VolumeController extends BaseController {
 
     public VolumeController(){
         this.loader = ServiceLocator.getVolumeLoader();
-    } //for FXMLLoader
+    }
 }

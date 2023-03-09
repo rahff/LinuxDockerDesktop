@@ -8,6 +8,6 @@ public class NetworkController extends  BaseController {
 
     public NetworkController(){
         this.loader = ServiceLocator.getNetworkLoader();
-    } //for FXMLLoader
+    }
 
 }

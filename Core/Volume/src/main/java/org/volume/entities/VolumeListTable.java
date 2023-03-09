@@ -8,4 +8,8 @@ public class VolumeListTable extends BaseTable {
         super();
     }
 
+    public static VolumeListTable factory() {
+        return new VolumeListTable();
+    }
+
 }

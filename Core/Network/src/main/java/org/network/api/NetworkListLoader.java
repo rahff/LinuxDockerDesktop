@@ -5,6 +5,7 @@ import org.network.entities.NetworkTable;
 import org.core.entities.EntityLoader;
 import org.core.spi.CommandRunnerAdapter;
 
+import java.util.List;
 import java.util.ServiceLoader;
 
 
@@ -20,6 +21,8 @@ public class NetworkListLoader extends EntityLoader {
 
     private void init() {
         this.command = "docker network list";
-        this.table = new NetworkTable();
+    }
+    protected List<List<String>> getTableContent(String commandOutput) {
+        return NetworkTable.factory().getContent(commandOutput);
     }
 }
